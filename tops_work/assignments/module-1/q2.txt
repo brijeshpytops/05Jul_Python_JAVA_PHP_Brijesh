@@ -1,0 +1,8 @@
+Q2] What is a software? and types of software.
+
+Ans]
+Software is a set of instructions that tells the computer what to do. It is a program that performs a specfic tasks.
+
+Types of software are:
+1] System software
+2] Application software
