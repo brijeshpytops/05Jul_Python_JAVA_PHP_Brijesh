@@ -25,3 +25,13 @@ Repo (tops_work) :
         - assessment-3
     - projects
         - 
+
+# Repeted commands
+
+1] git status [ Optional ]
+
+2] git add .
+
+3] git commit -m "q1 to q4 is done in modul1 1"
+
+4] git push
