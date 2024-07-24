@@ -35,3 +35,5 @@ Repo (tops_work) :
 3] git commit -m "q1 to q4 is done in modul1 1"
 
 4] git push
+
+OSI Model: https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/
