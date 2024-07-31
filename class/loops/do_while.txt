@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    // finite loop
+    int start = 10;
+    int end = 1;
+    
+    do{
+        printf("%d-Tops\n", start);
+        // start++;
+        start -= 1;
+    }while(start >= end);
+    
+    
+    
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+    // finite loop
+    int start = 10;
+    int end = 10;
+    
+    do{
+        printf("%d-Tops\n", start);
+        // start++;
+        start -= 1;
+    }while(start > end);
+    
+    
+    
+    return 0;
+}

@@ -1,0 +1,28 @@
+loops are used to execute a block of code repeatedly as long as a specified condition is true. There are three main types of loops in C:
+
+1. For Loop
+The for loop is used when the number of iterations is known before entering the loop. The syntax is:
+
+for (initialization; condition; increment/decrement) {
+    // code to be executed
+}
+
+for(start; end; start(+/-)){
+    // code to be executed
+}
+
+2. While Loop
+The while loop is used when the number of iterations is not known and depends on a condition. The loop continues as long as the condition is true. The syntax is:
+
+while (condition) {
+    // code to be executed
+}
+
+
+Do-While Loop
+
+The do-while loop is similar to the while loop, but the condition is checked after the loop's body is executed. This ensures that the loop is executed at least once. The syntax is:
+
+do {
+    // code to be executed
+} while (condition);

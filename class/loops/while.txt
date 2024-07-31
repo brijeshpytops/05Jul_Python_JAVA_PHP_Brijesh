@@ -1,0 +1,88 @@
+#include <stdio.h>
+
+int main() {
+    // infinite loop
+    while(0){
+        printf("Tops");
+    }
+    
+    return 0;
+}
+
+
+
+#include <stdio.h>
+
+int main() {
+    // finite loop
+    int start = 1;
+    int end = 10;
+    
+    while(start <= end){
+        printf("Tops");
+        // start++;
+        start += 1;
+    }
+    
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+    // finite loop
+    int start = 10;
+    int end = 1;
+    
+    while(start >= end){
+        printf("%d-Tops\n", start);
+        // start++;
+        start -= 1;
+    }
+    
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+    // finite loop
+    int start = 1;
+    int end = 10;
+    long int table = 44657658;
+    
+    while(start <= end){
+        printf("%d * %d = %d\n", table, start, start*table);
+        start += 1;
+    }
+    
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    while(1){
+        int age;
+    float weight;
+    
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    
+    if (age >= 18){
+        printf("Enter your weight: ");
+        scanf("%f", &weight);
+        if (weight >= 50){
+            printf("You can donate\n\n");
+        }else{
+            printf("You can not donate\n\n");
+        }
+    }else{
+        printf("You can not donate\n\n");
+    }
+    }
+    
+    return 0;
+}
