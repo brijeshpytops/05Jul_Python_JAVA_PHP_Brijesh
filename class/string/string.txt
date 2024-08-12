@@ -1,0 +1,169 @@
+what is string in c ?
+In C programming, a string is a sequence of characters terminated by a null character (\0). This null character signifies the end of the string. Strings in C are typically represented as an array of characters.
+
+syntax 
+
+char array[] = "value";
+char array[] = {'v','a','l','u','e'};
+
+Example : 1
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    // char name[] = "tops technology";
+    char name[100];
+    printf("Enter a company name: ");
+    //scanf("%s", &name);
+    fgets(name, sizeof(name), stdin);
+
+    printf("%s", name);
+
+    return 0;
+}
+
+
+Example - 2 : Access an element of the string 
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    // char name[] = "tops technology";
+    char name[100];
+    printf("Enter a company name: ");
+    //scanf("%s", &name);
+    fgets(name, sizeof(name), stdin);
+
+
+    // printf("%s", name);
+
+    //int len = sizeof(name)/sizeof(name[0]);
+    int len = strlen(name) - 1;
+    // printf("length of string is : %d", len);
+
+    for(int pos = 0; pos<len; pos++){
+            if ((name[pos] >= 'A') && name[pos] <= 'Z'){
+                printf("%c", name[pos]);
+                continue;
+            }else{
+                printf("%c", name[pos]-32);
+            }
+
+    }
+
+    return 0;
+}
+
+
+Example -3:merge
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char fname[] = "brijesh";
+    char lname[] = "patel";
+
+    strcat(fname, lname);
+    printf("%s", fname);
+
+    return 0;
+}
+
+
+Example -4:copy
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char name[] = "brijesh";
+    char fname[100];
+
+    strcpy(fname, name);
+    printf("%s", fname);
+
+    return 0;
+}
+
+Example -5:compare
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[] = "test";
+    char str2[] = "Test";
+
+    int result = strcmpi(str1, str2);
+    int result = strcmp(str1, str2);
+
+    printf("Comparison result: %d\n", result);
+
+    if (result == 0) {
+        printf("Strings are identical.\n");
+    } else if (result > 0) {
+        printf("'%s' is greater than '%s'.\n", str1, str2);
+    } else {
+        printf("'%s' is less than '%s'.\n", str1, str2);
+    }
+
+    return 0;
+}
+
+
+
+1. strlen
+Prototype: size_t strlen(const char *str);
+Description: Returns the length of the string str (excluding the null character \0).
+2. strcpy
+Prototype: char *strcpy(char *dest, const char *src);
+Description: Copies the string src to dest. The destination string must be large enough to hold the source string, including the null character.
+3. strncpy
+Prototype: char *strncpy(char *dest, const char *src, size_t n);
+Description: Copies up to n characters from the string src to dest. If src is less than n characters long, the remainder of dest will be padded with null characters.
+4. strcat
+Prototype: char *strcat(char *dest, const char *src);
+Description: Appends the string src to the end of dest. The destination string must be large enough to hold both the original dest string and the src string, including the null character.
+5. strncat
+Prototype: char *strncat(char *dest, const char *src, size_t n);
+Description: Appends up to n characters from the string src to the end of dest.
+6. strcmp
+Prototype: int strcmp(const char *str1, const char *str2);
+Description: Compares the strings str1 and str2 lexicographically. Returns an integer less than, equal to, or greater than zero if str1 is found to be less than, equal to, or greater than str2, respectively.
+7. strncmp
+Prototype: int strncmp(const char *str1, const char *str2, size_t n);
+Description: Compares up to n characters of the strings str1 and str2. Returns an integer based on the comparison, similar to strcmp.
+8. strchr
+Prototype: char *strchr(const char *str, int c);
+Description: Returns a pointer to the first occurrence of the character c in the string str. If the character is not found, it returns NULL.
+9. strrchr
+Prototype: char *strrchr(const char *str, int c);
+Description: Returns a pointer to the last occurrence of the character c in the string str. If the character is not found, it returns NULL.
+10. strstr
+Prototype: char *strstr(const char *haystack, const char *needle);
+Description: Finds the first occurrence of the substring needle in the string haystack. Returns a pointer to the beginning of the found substring, or NULL if the substring is not found.
+11. strtok
+Prototype: char *strtok(char *str, const char *delim);
+Description: Splits a string into tokens based on the delimiters specified in delim. It returns a pointer to the first token and NULL when no more tokens are found.
+12. strdup
+Prototype: char *strdup(const char *str);
+Description: Returns a pointer to a new string which is a duplicate of the string str. The memory for the new string is obtained with malloc, and can be freed with free. (Note: Not part of the C Standard Library but commonly available in many implementations.)
+13. strspn
+Prototype: size_t strspn(const char *str1, const char *str2);
+Description: Returns the length of the initial segment of str1 which consists entirely of characters in str2.
+14. strcspn
+Prototype: size_t strcspn(const char *str1, const char *str2);
+Description: Returns the length of the initial segment of str1 which consists entirely of characters not in str2.
+15. memset
+Prototype: void *memset(void *str, int c, size_t n);
+Description: Fills the first n bytes of the memory area pointed to by str with the constant byte c.
+16. memcpy
+Prototype: void *memcpy(void *dest, const void *src, size_t n);
+Description: Copies n bytes from memory area src to memory area dest. The memory areas must not overlap.
+17. memmove
+Prototype: void *memmove(void *dest, const void *src, size_t n);
+Description: Copies n bytes from memory area src to memory area dest. The memory areas may overlap.
+18. memchr
+Prototype: void *memchr(const void *str, int c, size_t n);
+Description: Scans the initial n bytes of the memory area pointed to by str for the first occurrence of the byte c.
+19. memcmp
+Prototype: int memcmp(const void *str1, const void *str2, size_t n);
+Description: Compares the first n bytes of the memory areas str1 and str2. Returns an integer based on the comparison.

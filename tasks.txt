@@ -1,0 +1,44 @@
+Task-1:
+- get string from the user: "PythON CodE"
+
+Create a functions for:
+- convert the string to lowercase: "python code"
+- convert the string to uppercase: "PYTHON CODE"
+- Convert the string to swapcase: "pYTHon cODe"
+- Convert the string to titlecase: "Python Code"
+- Convert the string to capitalizeCase: "Python code"
+- count the number of vowels in the string: _
+- count the number of consonates in the string: _
+- count the number of digits in the string: _
+- count the number of spaces in the string: _
+- count the number of punctuation in the string: _
+- count the number of words in the string: _
+- count the number of characters in the string: _
+
+Task - 2]
+- get string from the user : ToPS
+
+Example: 
+ToPS - 0010000
+TeCh - 001001
+
+Task - 3]
+ - get two string from the user :
+    - insert
+    - delete
+    - update
+Example:
+1 Python
+2 PHP
+1 + 1 + 3 = 5
+
+Example:
+1 java
+2 python
+1+1+1+1+2 = 6
+
+
+
+
+
+
